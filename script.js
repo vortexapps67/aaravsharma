@@ -325,6 +325,14 @@ function initMobileDrawer() {
       document.body.style.overflow = '';
     });
   });
+
+  // Close on Escape key
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) {
+      drawer.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
 }
 
 /* ==========================================================================
