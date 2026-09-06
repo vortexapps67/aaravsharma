@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Projects &amp; Systems | Aarav Sharma</title>
+  <meta name="description" content="Explore production systems and open-source applications architected by Aarav Sharma. High-throughput backends, audio streaming platforms (BeatWave), and encrypted relays (Onyx).">
+  <meta name="keywords" content="Aarav Sharma projects, Aarav Sharma BeatWave, Aarav Sharma software, Aarav Sharma Zephyr Devs, Aarav Sharma Vortex Apps, Kotlin developer, React developer">
+  <meta name="author" content="Aarav Sharma">
+  <link rel="canonical" href="https://aaravsharma.dev/projects.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aaravsharma.dev/projects.html">
+  <meta property="og:title" content="Engineering Projects &amp; Systems | Aarav Sharma">
+  <meta property="og:description" content="Production deployments authored by Aarav Sharma — BeatWave, Onyx, Zephyr Devs, and Vortex Apps.">
+  <meta property="og:image" content="assets/liquid-chrome-bg.png">
+
+  <!-- JSON-LD CollectionPage & SoftwareApplications by Aarav Sharma -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Aarav Sharma — Engineering Projects & Systems Portfolio",
+    "description": "Production systems authored and architected by Aarav Sharma, including BeatWave and Onyx Chat.",
+    "url": "https://aaravsharma.dev/projects.html",
+    "creator": {
+      "@type": "Person",
+      "@id": "https://aaravsharma.dev/#person",
+      "name": "Aarav Sharma",
+      "jobTitle": "Principal Software Engineer & Systems Architect",
+      "sameAs": "https://github.com/beatlabs790"
+    },
+    "hasPart": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "BeatWave",
+        "operatingSystem": "Android, Web",
+        "applicationCategory": "MultimediaApplication",
+        "author": {
+          "@type": "Person",
+          "name": "Aarav Sharma"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Onyx Chat",
+        "applicationCategory": "CommunicationApplication",
+        "author": {
+          "@type": "Person",
+          "name": "Aarav Sharma"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" type="image/jpeg" href="assets/arav-pfp.jpg">
+  <link rel="apple-touch-icon" href="assets/arav-pfp.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dynamic Liquid Silver Ribbon Flowing Video Background -->
+  <div class="liquid-bg-container" aria-hidden="true">
+    <video class="liquid-video-bg" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="assets/liquid-chrome-bg.png">
+      <source src="Liquid_silver_ribbon_flows_202609061829.mp4" type="video/mp4">
+      <source src="assets/liquid-silver-flow.mp4" type="video/mp4">
+    </video>
+    <div class="liquid-vignette-overlay"></div>
+  </div>
+
+  <div class="cursor-spotlight" id="cursor-spotlight" aria-hidden="true"></div>
+  <div class="scroll-progress-bar" id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- N5 Floating Pill Navigation -->
+  <header class="header-outer">
+    <nav class="nav-pill-container" aria-label="Primary Navigation">
+      <a href="index.html" class="nav-brand-wrap">
+        <img src="assets/arav-pfp.jpg" alt="Aarav Sharma" class="nav-brand-avatar">
+        <span class="nav-brand-name">
+          AARAV SHARMA
+          <span class="nav-status-dot"></span>
+        </span>
+      </a>
+
+      <ul class="nav-links-list">
+        <li class="nav-link-item"><a href="index.html">Home</a></li>
+        <li class="nav-link-item active"><a href="projects.html">Projects</a></li>
+        <li class="nav-link-item"><a href="about.html">About</a></li>
+        <li class="nav-link-item"><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions-wrap">
+        <button class="theme-toggle-btn js-theme-toggle" aria-label="Toggle Theme">☼</button>
+        <a href="contact.html#upi-card" class="nav-cta-btn">Support via UPI</a>
+        <button class="mobile-menu-btn" id="mobile-menu-trigger" aria-label="Open Mobile Menu">&#9776;</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <span class="mono-tag">Aarav Sharma // Menu</span>
+      <button class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close Menu">&times;</button>
+    </div>
+    <ul class="mobile-drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Aarav</a></li>
+      <li><a href="contact.html">Contact &amp; Coordinates</a></li>
+    </ul>
+    <div>
+      <a href="contact.html#upi-card" class="btn-liquid-primary" style="width: 100%;">Support via UPI</a>
+    </div>
+  </div>
+
+  <div class="site-wrapper">
+    <main class="content-container">
+
+      <!-- Intro Section -->
+      <section class="hero-wrapper" style="padding-bottom: var(--space-8);">
+        <div class="reveal">
+          <span class="section-label">Engineering Portfolio &bull; Systems Repertory</span>
+          <h1 class="hero-title" style="margin-bottom: var(--space-4);">
+            Production deployments by <span class="grad-text">Aarav Sharma</span>.
+          </h1>
+          <p class="hero-description" style="margin-bottom: var(--space-8);">
+            Engineered with extreme care for latency, memory efficiency, and responsive ergonomics. Each system represents real-world software deployed to thousands of concurrent users.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs-bar reveal reveal-delay-1" id="project-filters">
+          <button class="filter-tab-item active" data-filter="all">All Systems (4)</button>
+          <button class="filter-tab-item" data-filter="vortex">Vortex Apps Labs (2)</button>
+          <button class="filter-tab-item" data-filter="zephyr">Zephyr Devs (2)</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- BeatWave -->
+          <article class="project-card reveal" data-agency="vortex" id="card-beatwave">
+            <div>
+              <div class="project-card-header">
+                <div class="project-badge-row">
+                  <img src="assets/beatwavepng.png" alt="BeatWave" class="project-icon">
+                  <span class="agency-tag vortex">Vortex Apps</span>
+                </div>
+                <span class="mono-tag" style="font-size: 0.75rem; color: var(--color-success);">&#9679; v4.0 Release</span>
+              </div>
+
+              <h3 class="project-title">BeatWave</h3>
+              <p class="project-desc">
+                High-fidelity, open-source audio streaming application for Android and the modern web. Authoring a custom audio buffer engine for seamless background playback with zero telemetry and zero ads.
+              </p>
+
+              <div class="tech-chips-list">
+                <span class="tech-chip">React</span>
+                <span class="tech-chip">NodeJS</span>
+                <span class="tech-chip">Kotlin / Android</span>
+                <span class="tech-chip">Tailwind</span>
+                <span class="tech-chip">Web Audio API</span>
+              </div>
+            </div>
+
+            <div class="project-links-row">
+              <a href="https://beatwave.oneapp.dev" target="_blank" rel="noopener" class="launch-link">
+                Launch Platform &#8599;
+              </a>
+              <a href="https://github.com/beatlabs790/BeatWave/releases/download/v4.0/BeatWave-release-v4.apk" class="download-pill-btn" download>
+                &#9094; Get APK (2,600+ Downloads)
+              </a>
+            </div>
+          </article>
+
+          <!-- Onyx Chat -->
+          <article class="project-card reveal reveal-delay-1" data-agency="vortex" id="card-onyx">
+            <div>
+              <div class="project-card-header">
+                <div class="project-badge-row">
+                  <img src="assets/onyx logo.png" alt="Onyx Chat" class="project-icon">
+                  <span class="agency-tag vortex">Vortex Apps</span>
+                </div>
+                <span class="mono-tag" style="font-size: 0.75rem; color: var(--color-accent);">&#9679; Sub-10ms</span>
+              </div>
+
+              <h3 class="project-title">Onyx Chat &bull; Encrypted Relay</h3>
+              <p class="project-desc">
+                Real-time ephemeral messaging protocol designed by Aarav Sharma. Built over high-throughput WebSocket tunnels, zero database retention, and client-side encryption.
+              </p>
+
+              <div class="tech-chips-list">
+                <span class="tech-chip">WebSockets</span>
+                <span class="tech-chip">Redis Streams</span>
+                <span class="tech-chip">Node.js</span>
+                <span class="tech-chip">Cryptography</span>
+              </div>
+            </div>
+
+            <div class="project-links-row">
+              <a href="https://github.com/beatlabs790" target="_blank" rel="noopener" class="launch-link">
+                GitHub Repository &#8599;
+              </a>
+              <span class="mono-tag" style="font-size: 0.75rem; color: var(--color-ink-3);">E2E Encrypted</span>
+            </div>
+          </article>
+
+          <!-- Zephyr Devs Enterprise Hub -->
+          <article class="project-card reveal reveal-delay-2" data-agency="zephyr" id="card-zephyr">
+            <div>
+              <div class="project-card-header">
+                <div class="project-badge-row">
+                  <img src="assets/zephyrlogo.jpg" alt="Zephyr Devs" class="project-icon">
+                  <span class="agency-tag">Zephyr Devs</span>
+                </div>
+                <span class="mono-tag" style="font-size: 0.75rem; color: var(--color-ink-2);">Production Studio</span>
+              </div>
+
+              <h3 class="project-title">Zephyr Devs Enterprise Suite</h3>
+              <p class="project-desc">
+                Flagship corporate agency infrastructure engineered by Aarav Sharma. Delivering custom enterprise SaaS backends, automated CI/CD workflows, and AI calibrated microservices.
+              </p>
+
+              <div class="tech-chips-list">
+                <span class="tech-chip">Kotlin Backends</span>
+                <span class="tech-chip">PostgreSQL</span>
+                <span class="tech-chip">Docker</span>
+                <span class="tech-chip">Cloud Orchestration</span>
+              </div>
+            </div>
+
+            <div class="project-links-row">
+              <a href="contact.html" class="launch-link">Consult on Projects &#8599;</a>
+              <span class="mono-tag" style="font-size: 0.75rem; color: var(--color-ink-3);">Patna &bull; Global</span>
+            </div>
+          </article>
+
+          <!-- Vortex Apps Incubator -->
+          <article class="project-card reveal reveal-delay-3" data-agency="zephyr" id="card-vortex">
+            <div>
+              <div class="project-card-header">
+                <div class="project-badge-row">
+                  <img src="assets/vortexapps.png" alt="Vortex Apps" class="project-icon">
+                  <span class="agency-tag">Zephyr &amp; Vortex</span>
+                </div>
+                <span class="mono-tag" style="font-size: 0.75rem; color: var(--color-accent);">Incubator</span>
+              </div>
+
+              <h3 class="project-title">Vortex Core Engine</h3>
+              <p class="project-desc">
+                Core DSP audio pipelines and client analytics engine powering consumer applications. Authoring low-overhead audio decoding algorithms for fluid mobile experiences.
+              </p>
+
+              <div class="tech-chips-list">
+                <span class="tech-chip">C++ NDK</span>
+                <span class="tech-chip">Android Compose</span>
+                <span class="tech-chip">DSP Audio</span>
+              </div>
+            </div>
+
+            <div class="project-links-row">
+              <a href="https://github.com/beatlabs790" target="_blank" rel="noopener" class="launch-link">
+                Source Framework &#8599;
+              </a>
+              <span class="mono-tag" style="font-size: 0.75rem; color: var(--color-ink-3);">Open Architecture</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Quick UPI Card for Projects -->
+      <section class="section-spacer">
+        <div class="upi-highlight-card reveal">
+          <div class="upi-card-grid">
+            <div class="upi-info-col">
+              <span class="section-label">Open Source Patronage</span>
+              <h3>Support Aarav Sharma's Engineering.</h3>
+              <p>
+                BeatWave and open-source software are maintained entirely through direct community contributions. Support hosting, bandwidth, and development via UPI.
+              </p>
+
+              <div class="upi-id-badge">
+                <span>ghanshyamsharma.nlu@okicici</span>
+                <button class="upi-copy-action-btn js-copy-upi">&#128203; Copy ID</button>
+              </div>
+
+              <div class="upi-actions-row">
+                <a href="upi://pay?pa=ghanshyamsharma.nlu@okicici&pn=Aarav%20Sharma&cu=INR" class="upi-mobile-pay-btn">
+                  &#9889; Launch UPI App to Pay
+                </a>
+              </div>
+            </div>
+
+            <div class="upi-qr-box">
+              <div class="qr-code-display" id="upi-qr-image-container"></div>
+              <span>Scan &amp; Back Aarav Sharma</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Ft5 Statement Footer -->
+    <footer class="site-footer">
+      <div class="content-container">
+        <div class="footer-top-row">
+          <div>
+            <div class="footer-brand-title">AARAV SHARMA</div>
+            <p class="footer-brand-tagline">
+              Software Engineer, Full-Stack Architect &amp; Founder of Zephyr Devs &amp; Vortex Apps.
+            </p>
+          </div>
+
+          <div class="footer-nav-columns">
+            <div>
+              <div class="footer-column-heading">Navigation</div>
+              <ul class="footer-links-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Aarav</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="footer-column-heading">Contributions</div>
+              <ul class="footer-links-list">
+                <li><a href="https://beatwave.oneapp.dev" target="_blank" rel="noopener">BeatWave Live</a></li>
+                <li><a href="https://github.com/beatlabs790" target="_blank" rel="noopener">GitHub Repositories</a></li>
+                <li><a href="#upi-support">UPI: ghanshyamsharma.nlu@okicici</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="footer-column-heading">Governance</div>
+              <ul class="footer-links-list">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-meta-bar">
+          <div class="footer-ist-clock">
+            <span class="clock-pulse"></span>
+            <span id="ist-live-clock">18:30:00 IST (UTC+5:30)</span>
+          </div>
+
+          <div>Patna &amp; Bengaluru, India &bull; Available Globally</div>
+          <div>&copy; 2026 Aarav Sharma. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

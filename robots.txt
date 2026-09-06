@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Canonical Sitemap for Aarav Sharma
+Sitemap: https://aaravsharma.dev/sitemap.xml
